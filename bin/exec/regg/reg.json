@@ -1,0 +1,15 @@
+{
+  "any": "([\\s\\S]*)",
+  "wordsp": "([A-Za-z0-9_ ]+)",
+  "worddot": "([A-Za-z0-9_.]+)",
+  "wordind": "([A-Za-z0-9_<> ]+)",
+  "wordcoln": "([A-Za-z0-9_<>: ]+)",
+  "wordclude": "([A-Za-z0-9_.()[\\]{} ]+)",
+  "nums": "([0-9 ]+)",
+  "numscalc": "([$0-9-+\\\\*.^% ]+)",
+  "linebreak": "([\\n\\r\\t ]*)",
+  "nums_1": "([0-9 ]+|)",
+  "nums_brace": "([0-9[\\] ]+)",
+  "any_s": "(\\s+)",
+  "constructor": "([A-Z])([A-Za-z0-9_ ]+)"
+}
