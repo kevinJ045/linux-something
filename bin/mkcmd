@@ -1,0 +1,9 @@
+# Change /home/workspace with the path where you want your commands to be
+
+if [ $1 ]; then
+	echo "#!/bin/bash" > /home/workspace/bin/$1
+	chmod +x /home/workspace/bin/$1
+	echo $1
+else
+	echo "add command name"
+fi
