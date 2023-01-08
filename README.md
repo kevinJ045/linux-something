@@ -35,5 +35,18 @@ Creates a new empty command
 Now idk if this exists, but this command will loop and execute a command until you click CTRL+C
 
 I am tired of writing like this so...
++ `overload` Loades a certain amount of mb to your RAM
++ `batp` Battery percentage
++ `cong` Easy access to your configs
++ `d` If it's a file, it opens it, if it's a dir, it ls it
++ `deauth` Aliases for deauthing with aimon-ng
++ `mem` Memory information
++ `nserver` Starts a server in the specified port to the current dir
++ `randfrom` Gives a random number from a-b
++ `req` GET or POST request
++ `setbg` Set Wallpaper
 
+Now, idk the rest of the commands. but feel free to see the code and decide...
 
+## One more thing
+There is a module called `colorom` for nodejs scripts, it is important don't forget it
