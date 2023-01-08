@@ -1,0 +1,9 @@
+#!/bin/bash
+
+args="-Xmx2048M"
+
+if [[ $1 ]]; then
+	args="-Xmx$1M"
+fi
+
+java $args /home/workspace/bin/exec/overload/main.java

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# pth=$(node /home/workspace/bin/exec/cdp/main.js $*)
+
+node /home/workspace/bin/exec/cdp/main.js $*
+
+# echo pth
+
+# cd $pth
+# $SHELL

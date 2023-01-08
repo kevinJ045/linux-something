@@ -1,0 +1,48 @@
+#!/bin/bash
+
+echo -n "Enter the cat name: "
+read VAR
+
+RED="\033[0;31m"
+YELLOW="\033[0;33m"
+macy="l 、
+（ﾟ､ ｡ ７
+ l、~ ヽ 
+ じじと )"
+
+printMacy(){
+	printf "$RED $macy"
+}
+
+printMax(){
+	echo -e "\033[032m ／l、  "
+	echo -e "\033[032m（ﾟ､ ｡ ７ "
+	echo -e "\033[032m l、~ ヽ　ﾉｼ"
+	echo -e "\033[032m じじと ） "
+}
+
+printMira(){
+	echo -e "  /l、
+ (ﾟ､ ｡ ７
+  l、~ ヽ　ﾉｼ 
+  じじと ）" | lolcat
+}
+
+if [[ $VAR == "macy" ]]
+then
+	printMacy
+elif [[ $VAR == "max" ]]
+then
+	printMax
+elif [[ $VAR == "mira" ]]
+then
+	printMira	
+elif [[ $VAR == "all" ]]
+then
+	printMacy
+	echo 
+	printMax
+	printMira
+fi
+
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+batp=$(upower -i `upower -e | grep 'BAT'` | grep 'percentage')
+bati=$(python3 -c "e='$batp';print(e[e.index('percentage'):e.index('%')+20])");
+echo $bati

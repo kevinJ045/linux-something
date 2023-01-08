@@ -1,0 +1,3 @@
+#!/bin/bash
+
+node /home/workspace/bin/exec/grne/index.js $*

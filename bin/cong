@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [[ $1 == "i3" ]]; then
+	micro ~/.config/i3/config
+elif [[ $1 == "poly" ]]; then
+	micro ~/.config/i3/mocha.ini
+elif [[ $1 == "ala" ]]; then
+	micro ~/.config/alacritty/alacritty.yml
+elif [[ $1 == "pcm" ]]; then
+	micro ~/.config/picom.conf
+elif [ $1 ]; then
+	micro ~/.config/$1/*
+else 
+	echo "oof..."
+	exit 1
+fi

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+node /home/workspace/bin/exec/kret/index.js $*
+
+# python /home/workspace/bin/exec/kret/main.py $*

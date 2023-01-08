@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+function loopit(){
+	clear
+	e=$($*)
+
+	echo $e
+	sleep 1
+	loopit $*
+}
+
+loopit $*
