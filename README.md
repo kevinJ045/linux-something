@@ -32,9 +32,7 @@ $ ppath linque (will search for a folder called linque in all subfolders of the 
 Creates a new empty command
 
 ### loopit
-```
 Now idk if this exists, but this command will loop and execute a command until you click CTRL+C
-```
 
 I am tired of writing like this so...
 
