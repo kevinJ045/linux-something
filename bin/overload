@@ -6,4 +6,4 @@ if [[ $1 ]]; then
 	args="-Xmx$1M"
 fi
 
-java $args /home/workspace/bin/exec/overload/main.java
+java $args /home/bushyice/workspace/bash/exec/overload/main.java

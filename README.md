@@ -2,9 +2,9 @@
 To make it work, if you use zsh do `nano .zshrc` or if bash `nano .bashrc`... if fish i have no idea.
 and then..
 ```bash
-PATH="/home/workspace/bin/:$PATH"
+PATH="/home/bushyice/workspace/bash/:$PATH"
 ```
-Now replace all occurencies of /home/workspace/bin with the folder of your choice (Empty folder recommended) and the copy all the commands in thisrepo/bin there ad done, you're all set
+Now replace all occurencies of /home/bushyice/workspace/bash with the folder of your choice (Empty folder recommended) and the copy all the commands in thisrepo/bin there ad done, you're all set
 
 ## Commands
 Now then, let's proceed to what the commands are. aside from the fact that i have no idea what some commands are. lemme just put some text here to make you think i am actually talking about something.

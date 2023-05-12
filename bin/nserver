@@ -1,3 +1,3 @@
 #!/bin/bash
 
-node /home/workspace/bin/exec/nserver/index.js $*
+node /home/bushyice/workspace/bash/exec/nserver/index.js $*

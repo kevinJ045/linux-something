@@ -1,3 +1,3 @@
 #!/bin/bash
 
-node /home/workspace/bin/exec/regg/index.js $*
+node /home/bushyice/workspace/bash/exec/regg/index.js $*

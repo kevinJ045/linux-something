@@ -1,5 +1,5 @@
 #!/bin/bash
 
-node /home/workspace/bin/exec/kret/index.js $*
+node /home/bushyice/workspace/bash/exec/kret/index.js $*
 
-# python /home/workspace/bin/exec/kret/main.py $*
+# python /home/bushyice/workspace/bash/exec/kret/main.py $*
