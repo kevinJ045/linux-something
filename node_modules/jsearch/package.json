@@ -1,0 +1,30 @@
+{
+  "name": "jsearch",
+  "version": "1.0.0",
+  "description": "Search anything on google, yandex and bing",
+  "main": "lib/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "search",
+    "google",
+    "yandex",
+    "bing",
+    "url",
+    "extractor"
+  ],
+  "author": {
+	"name": "Mgzhn",
+	"email": "admin@mgzhn.com",
+	"url":"http://mgzhn.com"
+	},
+	"contributors" : [
+		{
+			"name":"burtay",
+			"email":"admin@burtay.org",
+			"url":"http://janissaries.org"
+		}
+	],
+  "license": "MIT"
+}

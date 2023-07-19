@@ -1,4 +1,4 @@
-const chalk = require('colorom');
+// const chalk = require('colorom');
 const fs = require('fs');
 const path = require('path');
 const logger = require('morgan');
@@ -59,10 +59,10 @@ app.use(cors({
 
 var manp = path.resolve(args[1] || "./");
 
-console.log(chalk.yellow("Server will start in dir: "+ manp));
+console.log("Server will start in dir: "+ manp);
 
 app.use(express.static(manp));
 
 app.use(logger("dev"));
 
-app.listen(parseInt(port), () => {console.log(chalk.green.bold("Server started: http://localhost:"+ port +"/"))});
+app.listen(parseInt(port), () => {console.log("Server started: http://localhost:"+ port +"/")});

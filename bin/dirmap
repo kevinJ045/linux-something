@@ -1,0 +1,3 @@
+
+
+node ~/workspace/bash/exec/dirmap/index.js $*
